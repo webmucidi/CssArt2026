@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalbim CSS için atıyor!</title>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        div{
+            width: 100px;
+            height: 90px;
+            position: relative;
+            background: rgb(255, 145, 0);
+        }
+        div:before{
+            content: "";
+            position: absolute;
+            top:0;
+            left:50px;
+            width: 50px;
+            height: 80px;
+            background-color: #3727e6;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        div:after{
+            content: "";
+            position: absolute;
+            top:0;
+            left:0;
+            width: 50px;
+            height: 80px;
+            background-color: #E62727;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
