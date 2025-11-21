@@ -24,14 +24,27 @@ div {
 div::before {
   content:"";
   position:absolute;
-  width:60px;
-  height:90px;
-  background:#f2b23a;
-  left:0;
-  top: 0;
+  width:80px;
+  height:80px;
+  top:-95px;
+  left:50%;
   transform:translateX(-50%);
-  border-radius:0 0 40px 40px;
+  background:#f2b23a;
+  border-radius:35px 35px 0 0;
+  box-shadow:0  230px 0 0 #a06d0f;
+}
 
+div::after {
+  content:"";
+  position:absolute;
+  width:80px;
+  height:80px;
+  top:50%;
+  left:-100px;
+  transform:translateY(-50%);
+  background:#f2b23a;
+  border-radius:35px 35px 0 0;
+  box-shadow:240px  0 #a06d0f;
 }
 
 
