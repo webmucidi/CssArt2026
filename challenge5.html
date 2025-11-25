@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Art Challenge 6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:#052a44;
+            display:grid;
+            place-items:center;
+            height:100vh;
+        }
+        div.merkez{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(214, 197, 91);
+            border-radius: 50%;
+            position: relative;
+        }
+        .merkez::before{
+            content: "";
+            width: 100px;
+            height: 50px;
+            background-color: rgb(128, 181, 231);
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+            position: absolute;
+            top: -50px;
+            left: 50px;
+            transform: rotate(45deg);
+            /*box-shadow: 100px 100px rgb(128, 181, 231);*/
+        }
+        .merkez::after{
+            content: "";
+            width: 100px;
+            height: 50px;
+            background-color: rgb(128, 231, 167);
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+            position: absolute;
+            top: -50px;
+            left: -80px;
+            transform: rotate(-45deg);
+        }
+        div.cevre{
+            width: 100px;
+            height: 50px;
+            background-color: rgb(213, 28, 191);
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            position: absolute;
+            top: 80px;
+            left: 50px;
+            transform: rotate(-45deg); 
+
+        }
+        .cevre::before{
+            content: "";
+            width: 100px;
+            height: 50px;
+            background-color: rgb(28, 108, 213);
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            position: absolute;
+            top: -90px;
+            left: -90px;
+            transform: rotate(90deg); 
+
+        }
+    </style>
+</head>
+<body>
+    <div class="merkez">
+        <div class="cevre"></div>
+    </div>
+    
+</body>
+</html>
