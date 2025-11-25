@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 Kasım Css Battle</title>
+<style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:#D95362;
+            display:grid;
+            justify-content:center;
+            align-items:top;
+            height:100vh;
+            padding-top:80px
+        }
+div{
+  box-sizing:border-box;
+  width:60px;
+  height:30px;
+  background:transparent;
+  border:20px solid #FFF9C0;
+  border-bottom:0;
+  border-top-left-radius:60px;
+  border-top-right-radius:60px;
+  position:relative;
+}
+  div::before{
+    content:"";
+    width:60px;
+    height:80px;
+    background:#FFF9C0;
+    position:absolute;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+  }
+    div::after{
+    content:"";
+    width:2000px;
+    height:20px;
+    background:#FFF9C0;
+    position:absolute;
+    top:100px;
+    left:-1000px;
+
+  }
+</style>
+
+
+</head>
+<body>
+    <div></div>
+</body>
+</html>
