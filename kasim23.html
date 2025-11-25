@@ -14,44 +14,68 @@ body{
   height:100vh;
 }
 
-div {
+.merkez {
   width:120px;
   height:120px;
   background:#cc6834;
   border-radius:50%;
   position:relative;
 }
-div::before {
+.merkez::before {
   content:"";
   position:absolute;
   width:80px;
   height:80px;
-  top:-95px;
+  top:-90px;
   left:50%;
   transform:translateX(-50%);
-  background:#f2b23a;
+  background:#f23a46;
   border-radius:35px 35px 0 0;
-  box-shadow:0  230px 0 0 #a06d0f;
+  /*box-shadow:0  230px 0 0 #a06d0f;*/
 }
 
-div::after {
-  content:"";
-  position:absolute;
+
+.cevre {
+ position: absolute;
+ top: 70%;
+ left: 50%;
+  transform: translate(-50%,-50%);
   width:80px;
   height:80px;
-  top:50%;
-  left:-100px;
-  transform:translateY(-50%);
-  background:#f2b23a;
-  border-radius:35px 35px 0 0;
-  box-shadow:240px  0 #a06d0f;
+  background:#cbaa6b;
+  border-radius:0 0 35px 35px ;
+  /*box-shadow:240px  0 #a06d0f;*/
 }
 
-
+.cevre::before { 
+  content:"";
+ position: absolute;
+ top: -60px;
+ left: -70px;
+transform: translate(-50%,-50%);
+  width:80px;
+  height:80px;
+  background:#3e2902;
+  border-radius: 35px  0 0 35px ;
+  /*box-shadow:240px  0 #a06d0f;*/
+}
+.cevre::after { 
+  content:"";
+ position: absolute;
+ top: -60px;
+ left: 150px;
+transform: translate(-50%,-50%);
+  width:80px;
+  height:80px;
+  background:#ddccae;
+  border-radius:0 35px 35px 0 ;
+  /*box-shadow:240px  0 #a06d0f;*/
+}
 </style>
 
 </head>
 <body>
-    <div></div>
+    <div class="merkez"></div>
+    <div class="cevre"></div>
 </body>
 </html>
