@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 Kasım CSS Battle</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:#AADBF7;
+            display:grid;
+            place-items:center;
+            height:100vh;
+
+        }
+  div {
+    width: 150px;
+    height: 150px;
+    background: #328FC1;
+    position:relative;
+    border:20px solid #243D83;
+  }
+    div:before {
+    content:"";
+    width: 30px;
+    height: 30px;
+    background: #328FC1;
+    position:absolute;
+    bottom:-20px;
+      left:-89px;
+      border:20px solid #243D83;
+      
+  }
+      div:after {
+    content:"";
+    width: 30px;
+    height: 30px;
+    background: #328FC1;
+    position:absolute;
+    bottom:-20px;
+    left:130px;
+    border:20px solid #243D83;
+      
+  }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
