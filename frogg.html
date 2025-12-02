@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+  *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:#293462;   
+            display:grid;
+            justify-content:center;
+            height:100vh;
+            padding:105px;
+        }
+  div#kafa {
+    width: 150px;
+    height: 105px;
+    background: #A64942;
+    border-radius:45% 45% 35% 35% / 45% ;
+    position:relative;
+  }
+
+      div#kafa::before {
+      content:"";
+    width: 150px;
+    height: 75px;
+    background: #FE5F55;
+    border-radius:55% 55% 50% 60% / 90% 90% 40% 40% ;
+      position:absolute;
+      top:0;
+      left:0;
+  }
+      div#kafa::after {
+      content:"";
+    width: 10px;
+    height: 10px;
+    background: #293462;
+    border-radius:50% ;
+      position:absolute;
+      top:55px;
+      left:60px;
+      box-shadow: 20px 0 #293462;
+  }
+  .gozler{
+    width:45px;
+    height:45px;
+    background:#FE5F55;
+    border-radius:50%;
+    position:absolute;
+    top:-20px;
+    left:20px;
+    box-shadow:65px 0 #FE5F55;
+  }
+    .gozler::before{
+      content:"";
+    width:30px;
+    height:30px;
+    background:#FFF1C1;
+    border-radius:50%;
+    position:absolute;
+    top:8px;
+    left:7px;
+    box-shadow:65px 0 #FFF1C1;
+  }
+      .gozler::after{
+      content:"";
+    width:10px;
+    height:10px;
+    background:#293462;
+    border-radius:50%;
+    position:absolute;
+    top:18px;
+    left:17px;
+    box-shadow:65px 0 #293462;
+  }
+</style>
+
+</head>
+<body>
+        <div id="kafa">
+  <div class="gozler"></div>
+</div>
+</body>
+</html>
