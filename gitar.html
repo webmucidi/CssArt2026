@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:#F3AC3C;   
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:90px 45px;
+        }
+
+    div.govde{
+    width: 120px;
+    height: 120px;
+    background: #998235;
+    border-radius:50%;
+    position:relative;
+
+  }
+   div.govde::after {
+      content:"";
+    width: 40px;
+    height: 40px;
+    background: #1A4341;
+      border: 5px solid #F3AC3C;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:80%;
+ transform:translateY(-50%);
+     
+
+  }
+    div.govde::before {
+    content:""; 
+    width: 100px;
+    height: 100px;
+    background: #998235;
+    border-radius:50%;
+    position:absolute;
+      top:50%;
+      left:60%;
+      transform:translateY(-50%);
+      
+  }
+  .sap{
+    width:150px;
+    height:20px;
+    background:#1A4341;
+    position:absolute;
+    top:50%;
+    left:150px;
+    transform:translateY(-50%);
+    z-index:-1;
+
+  }
+  .sap::before{
+    content:"";
+    width:40px;
+    height:30px;
+    background:#998235;
+    position:absolute;
+    top:-5px;
+    left:120px;
+    border-radius:10px;
+  }
+    .sap::after{
+    content:"";
+    width:20px;
+    height:6px;
+    background:none;
+    position:absolute;
+    top:3;
+    left:130;
+    border-top:4px solid #1A4341;
+    border-bottom:4px solid #1A4341;
+      border-left:0;
+      border-right:0;
+      
+  }
+</style>
+
+
+</head>
+<body>
+        <div class="govde">
+  <div class="sap"></div>
+</div>
+</body>
+</html>
